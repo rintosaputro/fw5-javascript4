@@ -9,8 +9,7 @@ const divideAndSort = (num) => {
 
     for(let i = 0; i<toStr.length; i++) {
         if(toStr[i] != '0') {
-            let toInt = Number(toStr[i])
-            tempo.push(toInt)
+            tempo.push(toStr[i])
         } 
         if((toStr[i] == '0') || (i == toStr.length-1)) {
             tempo.sort()
@@ -19,7 +18,8 @@ const divideAndSort = (num) => {
         }
     }
 
-    console.log(...result)
+    const arrJoin = Number(result.join(''))
+    console.log(arrJoin)
 }
 
 divideAndSort(5956560159466056)
